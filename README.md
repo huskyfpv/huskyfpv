@@ -5,7 +5,7 @@ HuskyFPV is committed to providing a new generation of powerful and reliable dig
 HuskyFPV has the following features:
 
 - Digital video transmission latency is as low as 48ms
-- Racing-grade video encoding algorithms maintain clear imagery even at flight speeds up to 350 km/h
+- Racing-grade video encoding algorithms maintain clear imagery even at speeds up to 350 km/h
 - Users can customize external RTSP addresses to connect to multiple devices (gimbals, IP cameras, etc)
     - URL format: rtsp://username:password@ip:port/path
 - Dual video source simultaneous transmission support (each video stream can be accessed via the RTSP protocol through the Ethernet interface of the ground unit)
