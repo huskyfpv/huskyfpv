@@ -6,6 +6,7 @@ HuskyFPV has the following features:
 
 - Digital video transmission latency is as low as 48ms
 - Racing-grade video encoding algorithms maintain clear imagery even at speeds up to 350 km/h
+- Advanced video aggregation acceleration technology ensures smooth, stable display for each video stream with minimal latency
 - Users can customize external RTSP addresses to connect to multiple devices (gimbals, IP cameras, etc)
     - URL format: rtsp://username:password@ip:port/path
     - Encoder format: H.265
@@ -25,13 +26,12 @@ HuskyFPV has the following features:
 - Dual video source simultaneous transmission support (each video stream can be accessed via the RTSP protocol through the Ethernet interface of the ground unit)
     - First video source: rtsp://192.168.1.231:8554/1
     - Second video source: rtsp://192.168.1.231:8555/1
-- Advanced video aggregation acceleration technology ensures smooth, stable display for each video stream with minimal latency
-
+<!--
 ## Hardware
 - Wlan 5G module support the blink BL-M8812EU
 - Air unit support sigmastar SSC378DE
 - Ground unit support sigmastar SSR621Q
 - Provides schematics, allowing users to unleash their creativity in design
-<!--
+
 
 -->
