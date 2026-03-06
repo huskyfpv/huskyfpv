@@ -28,7 +28,7 @@ HuskyFPV has the following features:
 - Wlan 5G module support the blink BL-M8812EU
 - Air unit support sigmastar SSC378DE
 - Ground unit support sigmastar SSR621Q
-- Provides schematics, allowing users to unleash their creativity in design.
+- Provides schematics, allowing users to unleash their creativity in design
 <!--
 
 -->
