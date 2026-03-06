@@ -8,6 +8,17 @@ HuskyFPV has the following features:
 - Racing-grade video encoding algorithms maintain clear imagery even at speeds up to 350 km/h
 - Users can customize external RTSP addresses to connect to multiple devices (gimbals, IP cameras, etc)
     - URL format: rtsp://username:password@ip:port/path
+    - Encoder format: H.265
+    - Resolution: max 1080p30
+    - Tested models:
+        - SIYI ZR10, ZR30, A8-mini, A2-mini
+        - Skydroid C10/PRO, C12
+        - TOPOTEK
+        - XF Z1-mini
+        - SudoCam H200
+        - MC-A81, MC-800S5
+        - FH81-PRO
+        - IP camera H54, H44, H41
 - Dual video source simultaneous transmission support (each video stream can be accessed via the RTSP protocol through the Ethernet interface of the ground unit)
     - First video source: rtsp://192.168.1.231:8554/1
     - Second video source: rtsp://192.168.1.231:8555/1
@@ -18,7 +29,6 @@ HuskyFPV has the following features:
 - Air unit support sigmastar SSC378DE
 - Ground unit support sigmastar SSR621Q
 - Provides schematics, allowing users to unleash their creativity in design.
-
 <!--
 
 -->
