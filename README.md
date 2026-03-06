@@ -15,10 +15,13 @@ HuskyFPV has the following features:
         - Skydroid C10/PRO, C12
         - TOPOTEK
         - XF Z1-mini
-        - SudoCam H200
-        - MC-A81, MC-800S5
-        - FH81-PRO
-        - IP camera H54, H44, H41
+        - SudoCam H200 (https://item.taobao.com/item.htm?id=708237932971)
+        - MC-A81/A85 (http://item.taobao.com/item.htm?id=738107142074)
+        - MC-800S5 (https://item.taobao.com/item.htm?id=865561621758)
+        - FH81-PRO (https://item.taobao.com/item.htm?id=756965128386)
+        - IPC H54 (https://item.taobao.com/item.htm?id=838306416275)
+        - IPC H44 (https://item.taobao.com/item.htm?id=1003120164322)
+        - IPC H41 (https://item.taobao.com/item.htm?id=675451083033)
 - Dual video source simultaneous transmission support (each video stream can be accessed via the RTSP protocol through the Ethernet interface of the ground unit)
     - First video source: rtsp://192.168.1.231:8554/1
     - Second video source: rtsp://192.168.1.231:8555/1
