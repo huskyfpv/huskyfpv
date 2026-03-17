@@ -27,6 +27,8 @@ HuskyFPV has the following features:
 - Dual video source simultaneous transmission support (each video stream can be accessed via the RTSP protocol through the Ethernet interface of the ground unit)
     - First video source: rtsp://192.168.1.231:8554/1
     - Second video source: rtsp://192.168.1.231:8555/1
+- Video output supports Picture-in-Picture (PIP) display (currently switched via a button press, remote control channel configuration will be added in the future)
+
 <!--
 ## Hardware
 - Wlan 5G module support the blink BL-M8812EU
