@@ -27,7 +27,10 @@ HuskyFPV has the following features:
 - Dual video source simultaneous transmission support (each video stream can be accessed via the RTSP protocol through the Ethernet interface of the ground unit)
     - First video source: rtsp://192.168.1.231:8554/1
     - Second video source: rtsp://192.168.1.231:8555/1
-- Video output supports Picture-in-Picture (PIP) display (currently switched via a button press, remote control channel configuration will be added in the future)
+- Video output supports Picture-in-Picture (PIP) display
+- Supports switching the Picture-in-Picture (PIP) video via the 'M' button, or by an S.BUS channel configured in the "RC Function Mapping" menu.
+- Supports configuring PWM output parameters of air unit, inclue scale factor and reverse.
+
 
 <!--
 ## Hardware
