@@ -31,13 +31,17 @@ HuskyFPV has the following features:
 - Supports switching the Picture-in-Picture (PIP) video via the 'M' button, or by an S.BUS channel configured in the "RC Function Mapping" menu.
 - Supports configuring PWM output parameters of air unit, inclue scale factor and reverse.
 
-
-<!--
 ## Hardware
-- Wlan 5G module support the blink BL-M8812EU
-- Air unit support sigmastar SSC378DE
-- Ground unit support sigmastar SSR621Q
+- Supported Models: V4 Hyper Fusion Digital Transmitter
+- 5.8GHz wireless module support: B-Link M8812EUx
+- LTE Cat4 module support:
+	- Quectel EC200A, EM05-G, EM05-CN
+ 	- Simcom SIM7600G-H, A7600C
+<!--
 - Provides schematics, allowing users to unleash their creativity in design
 
+- Soc support:
+	- sigmastar SSC378
+ 	- sigmastar SSR621Q
 
 -->
