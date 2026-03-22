@@ -33,7 +33,7 @@ HuskyFPV has the following features:
 
 ## Hardware
 - Supported Models:
-	- V4 Hyper Fusion Transmitter Pro(includes both air unit and ground unit)
+	- V4 Pro Hyper Fusion Transmitter(includes both air unit and ground unit)
 - Supported 5.2/5.8GHz wireless module:
 	- B-Link M8812EUx
 - Supported LTE Cat4 module support:
