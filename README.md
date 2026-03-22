@@ -32,9 +32,11 @@ HuskyFPV has the following features:
 - Supports configuring PWM output parameters of air unit, inclue scale factor and reverse.
 
 ## Hardware
-- Supported Models: V4 Hyper Fusion Digital Transmitter
-- 5.8GHz wireless module support: B-Link M8812EUx
-- LTE Cat4 module support:
+- Supported Models:
+	- V4 Hyper Fusion Transmitter Pro(includes both air unit and ground unit)
+- Supported 5.2/5.8GHz wireless module:
+	- B-Link M8812EUx
+- Supported LTE Cat4 module support:
 	- Quectel EC200A, EM05-G, EM05-CN
  	- Simcom SIM7600G-H, A7600C
 <!--
