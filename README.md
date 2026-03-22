@@ -37,7 +37,7 @@ HuskyFPV has the following features:
 - Supported 5.2/5.8GHz wireless module:
 	- B-Link M8812EUx
 - Supported LTE Cat4 module support:
-	- Quectel EC200A, EM05-G, EM05-CN
+	- Quectel EM05-G, EM05-CN, EC200A
  	- Simcom SIM7600G-H, A7600C
 <!--
 - Provides schematics, allowing users to unleash their creativity in design
