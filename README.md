@@ -5,8 +5,16 @@ HuskyFPV team is committed to providing a new generation of powerful and reliabl
 HuskyFPV has the following features:
 
 - Digital video transmission latency is as low as 48ms
+- Aggregating telemetry, rc signal, and video streams for simultaneous transmission
+- User-configurable colored OSD layout
 - Racing-grade video encoding algorithms maintain clear imagery even at speeds up to 350 km/h
-- Advanced video aggregation acceleration technology ensures smooth, stable display for each video stream with minimal latency
+- Dual video source simultaneous transmission support
+    - each video stream can be accessed via the RTSP protocol through the ethernet or wlan interface of the ground unit
+    - First video source (use ethernet): rtsp://192.168.1.231:8554/1
+    - Second video source (use ethernet): rtsp://192.168.1.231:8555/1
+    - First video source (use wlan): rtsp://192.168.110.1:8554/1
+    - Second video source (use wlan): rtsp://192.168.110.1:8555/1
+- Advanced video aggregation acceleration technology ensures smooth, stable display for multiple video streams with minimal latency
 - Users can customize external RTSP addresses to connect to multiple devices (gimbals, IP cameras, etc)
     - URL format: rtsp://username:password@ip:port/path
     - Encoder format: H.265
@@ -24,21 +32,21 @@ HuskyFPV has the following features:
         - IPC H54 (https://item.taobao.com/item.htm?id=838306416275)
         - IPC H44 (https://item.taobao.com/item.htm?id=1003120164322)
         - IPC H41 (https://item.taobao.com/item.htm?id=675451083033)
-- Dual video source simultaneous transmission support (each video stream can be accessed via the RTSP protocol through the Ethernet interface of the ground unit)
-    - First video source: rtsp://192.168.1.231:8554/1
-    - Second video source: rtsp://192.168.1.231:8555/1
 - Video output supports Picture-in-Picture (PIP) display
 - Supports switching the Picture-in-Picture (PIP) video via the 'M' button, or by an S.BUS channel configured in the "RC Function Mapping" menu.
 - Supports configuring PWM output parameters of air unit, inclue scale factor and reverse.
+- Support for STUN servers allows devices to establish P2P connections over the Internet.
+- Support for TURN servers allows devices to establish RELAY connections over the Internet when P2P connections are unavailable.
 
 ## Hardware
 - Supported Models:
-	- V4 Pro Hyper Fusion Transmitter(includes both air unit and ground unit)
+	- V4 Pro Hyper Fusion Transmitter
 - Supported 5.2/5.8GHz wireless module:
 	- B-Link M8812EUx
-- Supported LTE Cat4 module support:
+- Supported LTE Cat4 module:
 	- Quectel EM05-G, EM05-CN, EC200A
  	- Simcom SIM7600G-H, A7600C
+
 <!--
 - Provides schematics, allowing users to unleash their creativity in design
 
