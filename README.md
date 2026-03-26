@@ -33,10 +33,10 @@ HuskyFPV has the following features:
         - IPC H44 (https://item.taobao.com/item.htm?id=1003120164322)
         - IPC H41 (https://item.taobao.com/item.htm?id=675451083033)
 - Video output supports Picture-in-Picture (PIP) display
-- Supports switching the Picture-in-Picture (PIP) video via the 'M' button, or by an S.BUS channel configured in the "RC Function Mapping" menu.
-- Supports configuring PWM output parameters of air unit, inclue scale factor and reverse.
-- Support for STUN servers allows devices to establish P2P connections over the Internet.
-- Support for TURN servers allows devices to establish RELAY connections over the Internet when P2P connections are unavailable.
+- Supports switching the Picture-in-Picture (PIP) video via the 'M' button, or by an S.BUS channel configured in the "RC Function Mapping" menu
+- Supports configuring PWM output parameters of air unit, inclue scale factor and reverse
+- Support for STUN servers allows devices to establish P2P connections over the Internet
+- Support for TURN servers allows devices to establish RELAY connections over the Internet when P2P connections are unavailable
 
 ## Hardware
 - Supported Models:
@@ -46,6 +46,11 @@ HuskyFPV has the following features:
 - Supported LTE Cat4 module:
 	- Quectel EM05-G, EM05-CN, EC200A
  	- Simcom SIM7600G-H, A7600C
+
+## TURN/STUN server
+- Optimized based on Coturn 4.7.0.
+- The source code is in this repository: https://github.com/huskyfpv/turnserver
+- Users can deploy it on a Linux server(recommended Ubuntu) with a public IP address
 
 <!--
 - Provides schematics, allowing users to unleash their creativity in design
