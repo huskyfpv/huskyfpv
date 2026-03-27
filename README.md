@@ -1,4 +1,4 @@
-## HuskyFPV: New Generation Digital FPV system
+## HuskyFPV: Hyper Fusion Digital FPV system
 HuskyFPV team is committed to providing a new generation of powerful and reliable digital FPV systems. It breaks through the limitations of conventional technological frameworks by adopting an underlying engine with multi-aggregation capabilities, which will no longer be limited to physical distances or simple video function.
 
 ## Features
