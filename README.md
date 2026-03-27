@@ -52,6 +52,11 @@ HuskyFPV has the following features:
 - Connectivity is maintained during IP address changes in mobile environments (e.g., cross-regional handover between 4G/5G base stations) for both P2P and RELAY connection types
 - Uses LTE modules for data transmission, achieving an end-to-end delay of approximately 120-150 ms over a distance of 2,000 km
 - Supports global communication coverage, maintaining a maximum end-to-end transmission latency of about 500 ~ 600 ms even for the longest possible point-to-point distance across the Earth
+- Supports concurrent and aggregation transmission over mobile networks and wireless networks
+	- When a wireless network is available, it is prioritized for data transmission to ensure minimal latency
+ 	- When packet loss or disconnection occurs on the wireless network, the system​ seamlessly switches to mobile internet data to ensure smooth video
+  	- Intelligently detects stable wireless network conditions and automatically close mobile data transmission to reduce data costs
+  	- Users can choose to force-enable mobile network data transmission under any conditions, which will consume more data but provides the best stability
 
 ## Hardware
 - Supported Models:
