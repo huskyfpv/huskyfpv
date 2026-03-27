@@ -50,6 +50,8 @@ HuskyFPV has the following features:
 	- The source code of turnserver is in this repository: https://github.com/huskyfpv/turnserver
  	- Recommended server bandwidth for device capacity estimation: calculate based on 5Mbps per device
 - Connectivity is maintained during IP address changes in mobile environments (e.g., cross-regional handover between 4G/5G base stations) for both P2P and RELAY connection types
+- Uses LTE modules for data transmission, achieving an end-to-end delay of approximately 120-150 ms over a distance of 2,000 km
+- Supports global communication coverage, maintaining a maximum end-to-end transmission latency of about 500 ~ 600 ms even for the longest possible point-to-point distance across the Earth
 
 ## Hardware
 - Supported Models:
