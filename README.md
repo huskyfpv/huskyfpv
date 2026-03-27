@@ -15,11 +15,13 @@ HuskyFPV has the following features:
     - First video source (use wlan): rtsp://192.168.110.1:8554/1
     - Second video source (use wlan): rtsp://192.168.110.1:8555/1
 - Advanced video aggregation acceleration technology ensures smooth, stable display for multiple video streams with minimal latency
-- Users can customize external RTSP addresses to connect to multiple devices (gimbals, IP cameras, etc)
+- Users can customize external RTSP addresse to connect to multiple devices (such as gimbals, IP cameras, etc)
     - URL format: rtsp://username:password@ip:port/path
-    - Encoder format: H.265
-    - Resolution: max 1080p30
-	- Note: RTSP digest authentication is not supported.
+    - Encoder format: H.265/H.265+
+    - Resolution: <=1080p
+    - Frame rate: <=30fps
+    - GOP: recommended equals the frame rate value
+	- Note: RTSP digest authentication is not supported, only basic authentication or no authentication is available
     - Tested models:
         - SIYI ZR10, ZR30, A8-mini, A2-mini
         - Skydroid C10/PRO, C12
@@ -36,7 +38,16 @@ HuskyFPV has the following features:
 - Supports switching the Picture-in-Picture (PIP) video via the 'M' button, or by an S.BUS channel configured in the "RC Function Mapping" menu
 - Supports configuring PWM output parameters of air unit, inclue scale factor and reverse
 - Support for STUN servers allows devices to establish P2P connections over the Internet
+ 	- Cloudflare Public STUN servers
+  		- Url: stun.cloudflare.com
+    	- Port: 3478
+ 	- Google Public STUN servers
+ 		- Url: stun.l.google.com
+   		- Port: 19302
 - Support for TURN servers allows devices to establish RELAY connections over the Internet when P2P connections are unavailable
+	- Users can deploy it on a Linux server(recommended Ubuntu) with a public IP address
+	- The source code is in this repository: https://github.com/huskyfpv/turnserver
+	
 
 ## Hardware
 - Supported Models:
@@ -49,8 +60,6 @@ HuskyFPV has the following features:
 
 ## TURN/STUN server
 - Optimized based on Coturn 4.7.0.
-- The source code is in this repository: https://github.com/huskyfpv/turnserver
-- Users can deploy it on a Linux server(recommended Ubuntu) with a public IP address
 
 <!--
 - Provides schematics, allowing users to unleash their creativity in design
