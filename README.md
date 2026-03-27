@@ -38,16 +38,18 @@ HuskyFPV has the following features:
 - Supports switching the Picture-in-Picture (PIP) video via the 'M' button, or by an S.BUS channel configured in the "RC Function Mapping" menu
 - Supports configuring PWM output parameters of air unit, inclue scale factor and reverse
 - Support for STUN servers allows devices to establish P2P connections over the Internet
- 	- Cloudflare Public STUN servers
-  		- Url: stun.cloudflare.com
+ 	- Use Cloudflare Public STUN servers
+  		- Addr: stun.cloudflare.com
     	- Port: 3478
- 	- Google Public STUN servers
- 		- Url: stun.l.google.com
+ 	- Use Google Public STUN servers
+ 		- Addr: stun.l.google.com
    		- Port: 19302
 - Support for TURN servers allows devices to establish RELAY connections over the Internet when P2P connections are unavailable
-	- Users can deploy it on a Linux server(recommended Ubuntu) with a public IP address
-	- The source code is in this repository: https://github.com/huskyfpv/turnserver
-	
+	- Users can deploy TURN service on a Linux server(recommended Ubuntu) with a public IP address
+	- Turnserver project is optimized based on coturn project
+	- The source code of turnserver is in this repository: https://github.com/huskyfpv/turnserver
+ 	- Recommended server bandwidth for device capacity estimation: calculate based on 5Mbps per device
+- Connectivity is maintained during IP address changes in mobile environments (e.g., cross-regional handover between 4G/5G base stations) for both P2P and RELAY connection types
 
 ## Hardware
 - Supported Models:
@@ -57,9 +59,6 @@ HuskyFPV has the following features:
 - Supported LTE Cat4 module:
 	- Quectel EM05-G, EM05-CN, EC200A
  	- Simcom SIM7600G-H, A7600C
-
-## TURN/STUN server
-- Optimized based on Coturn 4.7.0.
 
 <!--
 - Provides schematics, allowing users to unleash their creativity in design
