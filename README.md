@@ -57,6 +57,9 @@ HuskyFPV has the following features:
  	- When packet loss or disconnection occurs on the wireless network, the system​ seamlessly switches to mobile internet data to ensure smooth video
   	- Intelligently detects stable wireless network conditions and automatically close mobile data transmission to reduce data costs
   	- Users can choose to force-enable mobile network data transmission under any conditions, which will consume more data but provides the best stability
+- Supports establishing a local area network(LAN) transmission via Ethernet
+	- Set the Air Unit LAN IP address (currently defaulting to 192.168.1.166) in the menu Transmit Path → LAN → Target IP​ to enable LAN communication
+	- LAN transmission also supports aggregation functionality
 
 ## Hardware
 - Supported Models:
