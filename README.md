@@ -44,7 +44,7 @@ HuskyFPV has the following features:
  	- Use Google Public STUN servers
  		- Addr: stun.l.google.com
    		- Port: 19302
-- Support establishing P2P connections over the Internet using Global IPv6 addresses
+- Support establishing P2P connections over the Internet using global IPv6 addresses
 - Support for TURN servers allows devices to establish RELAY connections over the Internet when P2P connections are unavailable
 	- Users can deploy TURN service on a Linux server(recommended Ubuntu) with a public IP address
 	- Turnserver project is optimized based on coturn project
