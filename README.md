@@ -51,7 +51,7 @@ HuskyFPV has the following features:
 	- The source code of turnserver is in this repository: https://github.com/huskyfpv/turnserver
  	- Recommended server bandwidth for device capacity estimation: calculate based on 5Mbps per device
 - Connectivity is maintained during IP address changes in mobile environments (e.g., cross-regional handover between 4G/5G base stations) for both P2P and RELAY connection types
-- Uses LTE modules for data transmission, achieving an end-to-end delay of approximately 120-150 ms over a distance of 2,000 km
+- Uses LTE modules or phones for data transmission, achieving an end-to-end delay of approximately 120-150 ms over a distance of 2,000 km
 - Supports global communication coverage, maintaining a maximum end-to-end transmission latency of about 500 ~ 600 ms even for the longest possible point-to-point distance across the Earth
 - Supports concurrent and aggregation transmission over mobile networks and wireless networks
 	- When a wireless network is available, it is prioritized for data transmission to ensure minimal latency
@@ -61,6 +61,7 @@ HuskyFPV has the following features:
 - Supports establishing a local area network(LAN) transmission via Ethernet
 	- Set the Air Unit LAN IP address (currently defaulting to 192.168.1.166) in the menu Transmit Path → LAN → Target IP​ to enable LAN communication
 	- LAN transmission also supports aggregation functionality
+- Supports USB tethering for the majority of Android phones.
 
 ## Hardware
 - Supported Models:
