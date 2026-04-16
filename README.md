@@ -62,6 +62,7 @@ HuskyFPV has the following features:
 	- Set the Air Unit LAN IP address (currently defaulting to 192.168.1.166) in the menu Transmit Path → LAN → Target IP​ to enable LAN communication
 	- LAN transmission also supports aggregation functionality
 - Supports USB tethering for the majority of Android phones.
+- Supports S.BUS, WBUS receivers
 
 ## Hardware
 - Supported Models:
