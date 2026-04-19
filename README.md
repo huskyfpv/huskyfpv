@@ -12,8 +12,8 @@ HuskyFPV has the following features:
     - each video stream can be accessed via the RTSP protocol through the ethernet or wlan interface of the ground unit
     - First video source (use ethernet): rtsp://192.168.1.231:8554/1
     - Second video source (use ethernet): rtsp://192.168.1.231:8555/1
-    - First video source (use wlan): rtsp://192.168.110.1:8554/1
-    - Second video source (use wlan): rtsp://192.168.110.1:8555/1
+    - First video source (use wlan): rtsp://192.168.110.10:8554/1
+    - Second video source (use wlan): rtsp://192.168.110.10:8555/1
 - Advanced video aggregation acceleration technology ensures smooth, stable display for multiple video streams with minimal latency
 - Users can customize external RTSP addresse to connect to multiple devices (such as gimbals, IP cameras, etc)
     - URL format: rtsp://username:password@ip:port/path
