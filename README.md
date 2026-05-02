@@ -20,7 +20,7 @@ HuskyFPV has the following features:
     - Encoder format: H.265/H.265+
     - Resolution: <=1080p
     - Frame rate: <=30fps
-    - Bitrate(Recommended): <=3Mbps
+    - Bitrate(Recommended): <=2.0Mbps
     - GOP: recommended equals the frame rate value
 	- Note: RTSP digest authentication is not supported, only basic authentication or no authentication is available
     - Tested models:
