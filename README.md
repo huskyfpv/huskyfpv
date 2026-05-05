@@ -8,12 +8,13 @@ HuskyFPV has the following features:
 - Aggregating telemetry, rc signal, and video streams for simultaneous transmission
 - User-configurable colored OSD layout
 - Racing-grade video encoding algorithms maintain clear imagery even at speeds up to 350 km/h
-- Dual video source simultaneous transmission support
+- Dual video source and telemetry simultaneous transmission support
     - each video stream can be accessed via the RTSP protocol through the ethernet or wlan interface of the ground unit
-    - First video source (use ethernet): rtsp://192.168.1.231:8554/1
-    - Second video source (use ethernet): rtsp://192.168.1.231:8555/1
-    - First video source (use wlan): rtsp://192.168.110.10:8554/1
-    - Second video source (use wlan): rtsp://192.168.110.10:8555/1
+    - First video source (use Ethernet): rtsp://192.168.1.231:8554/1
+    - Second video source (use Ethernet): rtsp://192.168.1.231:8555/1
+    - First video source (use Wlan0): rtsp://192.168.110.10:8554/1
+    - Second video source (use Wlan0): rtsp://192.168.110.10:8555/1
+    - telemetry (use Wlan0): UDP client mode, IP:192.168.110.10, Port:8888
 - Advanced video aggregation acceleration technology ensures smooth, stable display for multiple video streams with minimal latency
 - Users can customize external RTSP addresse to connect to multiple devices (such as gimbals, IP cameras, etc)
     - URL format: rtsp://username:password@ip:port/path
@@ -22,7 +23,7 @@ HuskyFPV has the following features:
     - Frame rate: <=30fps
     - Bitrate(Recommended): <=2.0Mbps
     - GOP: recommended equals the frame rate value
-	- Note: RTSP digest authentication is not supported, only basic authentication or no authentication is available
+    - Note: RTSP digest authentication is not supported, only basic authentication or no authentication is available
     - Tested models:
         - SIYI ZR10, ZR30, A8-mini, A2-mini
         - Skydroid C10/PRO, C12
@@ -39,46 +40,54 @@ HuskyFPV has the following features:
 - Supports switching the Picture-in-Picture (PIP) video via the 'M' button, or by an S.BUS channel configured in the "RC Function Mapping" menu
 - Supports configuring PWM output parameters of air unit, inclue scale factor and reverse
 - Support for STUN servers allows devices to establish P2P connections over the Internet
- 	- Use Cloudflare Public STUN servers
-  		- Addr: stun.cloudflare.com
-    	- Port: 3478
- 	- Use Google Public STUN servers
- 		- Addr: stun.l.google.com
-   		- Port: 19302
+    - Use Cloudflare Public STUN servers
+        - Addr: stun.cloudflare.com
+        - Port: 3478
+    - Use Google Public STUN servers
+        - Addr: stun.l.google.com
+        - Port: 19302
 - Support establishing P2P connections over the Internet using global IPv6 addresses
 - Support for TURN servers allows devices to establish RELAY connections over the Internet when P2P connections are unavailable
-	- Users can deploy TURN service on a Linux server(recommended Ubuntu) with a public IP address
-	- Turnserver project is optimized based on coturn project
-	- The source code of turnserver is in this repository: https://github.com/huskyfpv/turnserver
- 	- Recommended server bandwidth for device capacity estimation: calculate based on 5Mbps per video source
+    - Users can deploy TURN service on a Linux server(recommended Ubuntu) with a public IP address
+    - Turnserver project is optimized based on coturn project
+    - The source code of turnserver is in this repository: https://github.com/huskyfpv/turnserver
+    - Recommended server bandwidth for device capacity estimation: calculate based on 5Mbps per video source
 - Connectivity is maintained during IP address changes in mobile environments (e.g., cross-regional handover between 4G/5G base stations) for both P2P and RELAY connection types
 - Uses LTE modules or phones for data transmission, achieving an end-to-end delay of approximately 100-150 ms over a distance of 2,000 km
 - Supports global communication coverage, maintaining a maximum end-to-end transmission latency of about 500 ~ 600 ms even for the longest possible point-to-point distance across the Earth
 - Supports concurrent and aggregation transmission over mobile networks and wireless networks
-	- When a wireless network is available, it is prioritized for data transmission to ensure minimal latency
- 	- When packet loss or disconnection occurs on the wireless network, the system​ seamlessly switches to mobile internet data to ensure smooth video
-  	- Intelligently detects stable wireless network conditions and automatically close mobile data transmission to reduce data costs
-  	- Users can choose to force-enable mobile network data transmission under any conditions, which will consume more data but provides the best stability
+    - When a wireless network is available, it is prioritized for data transmission to ensure minimal latency
+    - When packet loss or disconnection occurs on the wireless network, the system​ seamlessly switches to mobile internet data to ensure smooth video
+    - Intelligently detects stable wireless network conditions and automatically close mobile data transmission to reduce data costs
+    - Users can choose to force-enable mobile network data transmission under any conditions, which will consume more data but provides the best stability
 - Supports establishing a local area network(LAN) transmission via Ethernet
-	- Set the Air Unit LAN IP address (currently defaulting to 192.168.1.166) in the menu Transmit Path → LAN → Target IP​ to enable LAN communication
-	- LAN transmission also supports aggregation functionality
+    - Set the Air Unit LAN IP address (currently defaulting to 192.168.1.166) in the menu Transmit Path → LAN → Target IP​ to enable LAN communication
+    - LAN transmission also supports aggregation functionality
 - Supports USB tethering for the majority of Android phones.
 - Supports S.BUS, WBUS receivers
+- Supports upgrade firmware (for both the Air Unit and Ground Unit) via Wi-Fi or Ethernet connection.
+    - Connect​ to the target device's Wi-Fi hotspot (wlan0) or Ethernet port.
+    - For the Ethernet connection:
+        - Air Unit: Access http://192.168.1.166 in a web browser.
+        - Ground Unit: Access http://192.168.1.231 in a web browser.
+    - For the Wi-Fi connection:
+        - Air Unit: Access http://192.168.110.11 in a web browser.
+        - Ground Unit: Access http://192.168.110.10 in a web browser.
 
 ## Hardware
 - Supported Models:
-	- V4 Pro Hyper Fusion Transmitter
+    - V4 Pro Hyper Fusion Transmitter
 - Supported 5.2/5.8GHz wireless module:
-	- B-Link M8812EUx
+    - B-Link M8812EUx
 - Supported LTE Cat4 module:
-	- Quectel EM05-G, EM05-CN, EC200A
- 	- Simcom SIM7600G-H, A7600C
+    - Quectel EM05-G, EM05-CN, EC200A
+    - Simcom SIM7600G-H, A7600C
 
 <!--
 - Provides schematics, allowing users to unleash their creativity in design
 
 - Soc support:
-	- sigmastar SSC378
- 	- sigmastar SSR621Q
+    - sigmastar SSC378
+    - sigmastar SSR621Q
 
 -->
