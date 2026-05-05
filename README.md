@@ -12,6 +12,7 @@ HuskyFPV has the following features:
     - each video stream can be accessed via the RTSP protocol through the ethernet or wlan interface of the ground unit
     - First video source (use Ethernet): rtsp://192.168.1.231:8554/1
     - Second video source (use Ethernet): rtsp://192.168.1.231:8555/1
+    - telemetry (use Ethernet): UDP client mode, IP:192.168.1.231, Port:8888
     - First video source (use Wlan0): rtsp://192.168.110.10:8554/1
     - Second video source (use Wlan0): rtsp://192.168.110.10:8555/1
     - telemetry (use Wlan0): UDP client mode, IP:192.168.110.10, Port:8888
