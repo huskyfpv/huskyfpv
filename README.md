@@ -22,8 +22,8 @@ HuskyFPV has the following features:
     - Encoder format: H.265/H.265+
     - Resolution: <=1080p
     - Frame rate: <=50fps
-    - Max bitrate: 3.0Mbps(recording, due to high CPU load)
-    - Max bitrate: 5.0Mbps(no recording)
+    - Max bitrate: 4.0Mbps(recording, due to high CPU load)
+    - Max bitrate: 6.0Mbps(no recording)
     - GOP: recommended equals the frame rate value
     - Note: RTSP digest authentication is not supported, only basic authentication or no authentication is available.
     - Tested models:
