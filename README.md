@@ -17,14 +17,14 @@ HuskyFPV has the following features:
     - Second video source (use Wlan0): rtsp://192.168.110.10:8555/1
     - telemetry (use Wlan0): UDP client mode, IP:192.168.110.10, Port:8888
 - Advanced video aggregation acceleration technology ensures smooth, stable display for multiple video streams with minimal latency.
-- Users can customize external RTSP addresse to connect to multiple devices (such as gimbals, IP cameras, etc).
+- Users can customize an additional RTSP camera to connect with various external devices (such as gimbals, IP cameras, etc).
     - URL format: rtsp://username:password@ip:port/path
     - Encoder format: H.265/H.265+
     - Resolution: <=1080p
     - Frame rate: <=50fps
-    - Max bitrate: 4.0Mbps(recording, due to high CPU load)
-    - Max bitrate: 6.0Mbps(no recording)
-    - GOP: recommended equals the frame rate value
+    - Max bitrate: 4.0Mbps(recording, due to high CPU load, use tfcard with the highest possible speed)
+    - Max bitrate: 8.0Mbps(no recording)
+    - GOP: recommended equals the frame rate
     - Note: RTSP digest authentication is not supported, only basic authentication or no authentication is available.
     - Tested models:
         - SIYI ZR10, ZR30, A8-mini, A2-mini
