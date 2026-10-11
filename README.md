@@ -21,11 +21,10 @@ HuskyFPV has the following features:
     - URL format: rtsp://username:password@ip:port/path
     - Encoder format: H.265/H.265+
     - Resolution: <=1080p
-    - Frame rate: <=50fps
-    - Max bitrate: 4.0Mbps(recording, due to high CPU load, use tfcard with the highest possible speed)
-    - Max bitrate: 8.0Mbps(no recording)
-    - GOP: recommended equals the frame rate
-    - Note: RTSP digest authentication is not supported, only basic authentication or no authentication is available.
+    - Frame rate: <=30fps
+    - Max bitrate: 6.0Mbps
+    - GOP: 1~2 sec
+    - Note: Supports all RTSP authentication methods.
     - Tested models:
         - SIYI ZR10, ZR30, A8-mini, A2-mini
         - Skydroid C10/PRO, C12
@@ -76,6 +75,8 @@ HuskyFPV has the following features:
         - Air Unit: Access http://192.168.110.11 in a web browser.
         - Ground Unit: Access http://192.168.110.10 in a web browser.
 - Fully support the use of QGroundControl to watch LTE link videos, low latency and more smooth.
+- Support bidirectional audio transmission, four-level intelligent background noise cancellation and echo cancellation.
+- Support simultaneous recording of video stream and audio stream.
 
 ## Hardware
 - Supported Models:
